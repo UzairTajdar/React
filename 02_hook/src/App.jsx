@@ -8,8 +8,11 @@ function App() {
   let [counter, setCounter] = useState(0)
 
   const increase = () => {
-    counter = counter + 1;
-    setCounter(counter)
+    // counter = counter + 1;
+    // setCounter(counter)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
     // console.log(counter)
   }
   const decrease = () => {
