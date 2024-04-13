@@ -24,7 +24,7 @@ export class Services{
                               userID,
                               featuredImage,
                               status
-                        }
+                        },
                   )
             } catch (error) {
                   console.log('Create Post ' ,error)
@@ -93,7 +93,7 @@ async uploadFile(file){
           return await this.storage.createFile(
               config.appwriteStorageID,
               ID.unique(),
-              file
+              file,
           )
       } catch (error) {
           console.log("Appwrite serive :: uploadFile :: error", error);

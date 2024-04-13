@@ -22,10 +22,10 @@ function App() {
   }).finally(()=>setLoading(false))
   },[])
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-slate-400'>
+    <div className='h-screen flex flex-wrap content-between bg-indigo-200'>
           <div className='w-full block'> 
           <Header />
-          ToDo: <Outlet />
+          <Outlet />
           <Footer />
           </div>
     </div>
